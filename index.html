@@ -313,59 +313,17 @@
         // Test ma'lumotlari
         const fileContent = `
 +++++
-(1+3i)(2+i)+(-2+i)(3-i)  Ifodaning qiymati nechaga teng?
--6+12i
-5-11i
-#6-12i
-8-4i
-+++++
-z=xy<sup>2</sup>(1-x-y) funksiyaning ekstremumga tekshiring.
-#1/64
-2/3
-1
+arg((1+i)(-2+2i)) kompleks sonning argument nimaga teng?
+# π
+- π
+π/2
 0
 +++++
-z=x<sup>3</sup>+y<sup>3</sup>-15xy funksiyaning ekstremumga tekshiring.
-#-125
--10
-15
+arg(1+i) kompleks sonning argumenti  nimaga teng?
+# π/4
+- π/4
+π/2
 0
-+++++
-Egri chiziqli integral orqali fizikadagi qanday kattalik ifodalanadi? 
-Impuls 
-Kuch  
-#Ish  
-Harorat
-+++++
-z=x+yi kompleks sonda i son nima deb ataladi?
-mavhum son
-#mavhum birlik
-haqiqiy va kompleks qismi
-haqiqiy son
-+++++
-z=x+yi kompleks sonda x  va y sonlar nima deb ataladi? 
-mavhum son
-mavhum birlik
-#haqiqiy va mavhum qism
-sof mavhum
-+++++
-z=x+yi kompleks sonda y=0 bo‘lsa, z=x nima deb ataladi? 
-mavhum son
-mavhum birlik
-#haqiqiy son
-sof mavhum
-+++++
-z=x+yi kompleks sonda x=0 bo‘lsa, z=iy nima deb ataladi?
-natural son
-mavhum birlik
-haqiqiy son
-#sof mavhum son
-+++++
-Yuqori tartibli xususiy hosilalarning belgilanishi qaysi?
-f' (x,y)
-#(∂<sup>2</sup> f)/(∂x<sup>2</sup> )
-∫f(x,y)dx/dy
-f''(x)
 +++++
 arg(-2+2i) kompleks sonning argumenti nimaga teng?
 #3π/4
@@ -374,28 +332,22 @@ arg(-2+2i) kompleks sonning argumenti nimaga teng?
 0
 +++++
 (2+3i)(1-i) kompleks sonni mavhum qismini toping?
-#1 
+#1
 5
 -1
 -5
 +++++
-arg((1+i)(-2+2i)) kompleks sonning argument nimaga teng?
-#π
-- π
-π/2
-0
-+++++
-arg(1+i) kompleks sonning argumenti  nimaga teng?
-#π/4
-- π/4
-π/2
-0
+(1+3i)(2+i)+(-2+i)(3-i)  Ifodaning qiymati nechaga teng?
+#-6+12i
+5-11i
+6-12i
+8-4i
 +++++
 Kompleks son tasvirlanadigan 0xy tekislik nima deb ataladi? 
 geometrik shakli 
 trigonometrik shakli
 ko‘rsatkichli shakli
-#kompleks tekislik
+# kompleks tekislik
 +++++
 z=x<sup>2</sup>+xy+y<sup>2</sup>-2x-y funksiyaning ekstremumga tekshiring.
 #zmin=-1
@@ -404,175 +356,223 @@ zmin=2
 zmin=1
 +++++
 Kompleks sonning trigonometrik shaklini aniqlang
-#z=r(cosφ+isinφ)
+ #z=r(cosφ+isinφ)
 z=x+yi
 e<sup>iφ</sup> = cosφ+isinφ
 e<sup>iφ</sup> =r
 +++++
 Kompleks sonlarda darajaga ko‘tarish va ildiz chiqarish formulalari nima deb ataladi?
-#Muavr formulalari
+# Muavr formulalari
 Eyler formulalari
 Kardano formulalari
 Bezu formulalari
 +++++
 Kompleks sonda Eyler formulasini aniqlang
-#z=r(cosφ+isinφ)
+ z=r(cosφ+isinφ)
 z=x+yi
-e<sup>iφ</sup> = cosφ+isinφ
+#e<sup>iφ</sup> = cosφ+isinφ
 e<sup>iφ</sup> =r
++++++
+Darajasi birdan kichik bo‘lmagan, istalgan son koeffitsientli, har qanday ko‘phad hech bo‘lmaganda, umumiy holda nechta kompleks ildizga ega bo‘ladi? 
+# bitta
+n ta
+ikkita
+ildizga ega bo’lmaydi
++++++
+Furye qatori yordamida qanday funksiyalarni ifodalash mumkin?
+Faqat uzluksiz funksiyalar
+Har qanday funksiya
+# Davrli va kvadrat integrallanadigan funksiyalar
+Faqat sinus funksiyalari
 +++++
 Uzluksizlik nima?
 Funksiya cheklangan bo‘lishi=
-#Limit mavjud va funksiyaning qiymatiga teng bo‘lishi 
+# Limit mavjud va funksiyaning qiymatiga teng bo‘lishi 
 Funksiya nolga teng bo‘lishi
 Funksiya faqat manfiy qiymatlar qabul qilishi
 +++++
 Qutb koordinatalarida x va y qanday ifodalanadi?
-x=r⋅tgθ,  y=r⋅cotθ
-#x=rcosθ,  y=rsinθ
-x=θ⋅r,  y=θ /r
+x=r⋅tgθ,  y=r⋅cotθ
+# x=rcosθ,  y=rsinθ
+x=θ⋅r,  y=θ /r
 x=r<sup>2</sup>,y=θ<sup>2</sup>
 +++++
 Quyidagi integral qutb koordinatalarida qanday yoziladi? ∬<sub>D</sub>f(x,y) dxdy
 ∫f(r)dr
 ∬f(r,θ) drdθ
-#∬f(r,θ)⋅r drdθ
+# ∬f(r,θ)⋅r drdθ
 ∬f(r<sup>2</sup>)⋅θ<sup>2</sup>drdθ
 +++++
 Kompleks sonni algebraik shaklini aniqlang
 z=r(cosφ+isinφ)
-#z=x+yi
+# z=x+yi
 e<sup>iφ</sup> = cosφ+isinφ
 e<sup>iφ</sup> =r
 +++++
 z=x+yi  kompleks sonda ishorasi bilangina farq qiluvchi kompleks sonlar qanday sonlar deyiladi?
 qo‘shma kompleks sonlar
-#qarama-qarshi kompleks sonlar
+# qarama-qarshi kompleks sonlar
 haqiqiy kompleks sonlar
 kompleks sonlar
 +++++
 Har bir z=x+yi  kompleks son 0xy koordinatlar tekisligining (x,y) nuqtasi yoki   vektori bilan tasvirlansa qaysi shaklga kiradi? 
-#geometrik shakli 
+# geometrik shakli 
 trigonometrik shakli
 ko‘rsatkichli shakli
 kompleks tekislik
 +++++
-z=x+yi kompleks sonda x=0, y≠0 bo‘lsa, y nima deb ataladi? 
-#mavhum son
+ z=x+yi kompleks sonda x=0, y≠0 bo‘lsa, y nima deb ataladi? 
+# mavhum son
 mavhum birlik
 haqiqiy va kompleks qismi
 haqiqiy son
 +++++
+z=x+yi kompleks sonda i son nima deb ataladi?
+mavhum son
+# mavhum birlik
+haqiqiy va kompleks qismi
+haqiqiy son
++++++
+z=x+yi kompleks sonda x  va y sonlar nima deb ataladi? 
+mavhum son
+mavhum birlik
+# haqiqiy va mavhum qism
+sof mavhum
++++++
+z=x+yi kompleks sonda y=0 bo‘lsa, z=x nima deb ataladi? 
+mavhum son
+mavhum birlik
+# haqiqiy son
+sof mavhum
++++++
+z=x+yi kompleks sonda x=0 bo‘lsa, z=iy nima deb ataladi?
+natural son
+mavhum birlik
+haqiqiy son
+#  sof mavhum son
++++++
 z=x+yi  kompleks sonda mavhum qismlarining ishorasi bilangina farq qiluvchi   va  ̅z=x-yi  kompleks sonlar qanday sonlar deyiladi?
-qo‘shma kompleks sonlar
-#qarama-qarshi kompleks sonlar
+#qo‘shma kompleks sonlar
+qarama-qarshi kompleks sonlar
 haqiqiy kompleks sonlar
 kompleks sonlar
 +++++
 Quyidagi funksiyalar qaysi shart bajarilganda ortogonal hisoblanadi?
 Ular o‘zaro ko‘paytmasi doimiy bo‘lsa
-Ularning integrali 1 ga teng bo‘lsa=
-#Ular o‘zaro skalyar ko‘paytmasi nolga teng bo‘lsa=
+Ularning integrali 1 ga teng bo‘lsa
+# Ular o‘zaro skalyar ko‘paytmasi nolga teng bo‘lsa
 Har ikkisi ham 0 ga teng bo‘lsa
 +++++
-Ortonormal funksiyalar sistemasida qanday shartlar bajariladi?=
-Faqat ortogonallik=
-#Har bir funksiyaning normasi 1 bo‘lishi=
-Har bir funksiyaning kvadrati 0 ga teng=
+Ortonormal funksiyalar sistemasida qanday shartlar bajariladi?
+ Faqat ortogonallik
+# Har bir funksiyaning normasi 1 bo‘lishi
+Har bir funksiyaning kvadrati 0 ga teng
 Ular sin va cos funksiyalariga teng
 +++++
 Quyidagilardan qaysi biri ikki karrali integralning xossasi hisoblanadi?
-#Additivlik 
-Homogenlik
-O‘zgaruvchanlik
-Davriylik
+# Additivlik 
+ Homogenlik
+ O‘zgaruvchanlik
+ Davriylik
 +++++
-Quyidagi qaysi funksiya 2π davrli hisoblanadi?=
-f(x)=tgx =
-#f(x)=sinx=
-f(x)=x^2=
+Quyidagi qaysi funksiya 2π davrli hisoblanadi?
+f(x)=tgx 
+# f(x)=sinx
+f(x)=x^2
 f(x)=lnx
++++++
+2π davrli funksiya uchun Furye qatori umumiy ko‘rinishi qaysi?
+<img src="https://hemis.fstu.uz/static/uploads/5/E6PVkc2vAxsNjct8AXLWwiqyewUv0ZLf.png" width="73" height="44">
+# <img src="https://hemis.fstu.uz/static/uploads/5/VUy8GWpmNAj76betX37myitHdk7Z8FGh.png" width="226" height="29">
+<img src="https://hemis.fstu.uz/static/uploads/5/cUUzjPKTcJJchMOJMyTBW3LhKtjTKM0q.png" width="61" height="31">
+<img src="https://hemis.fstu.uz/static/uploads/5/h4YtwVMstScOTqpy-2f-ca5GiLewIjW1.png" width="76" height="28">
 +++++
 Ixtiyoriy davrli funksiya uchun Furye qatori qanday oraliqda yozilishi mumkin?
 Faqat [−π,π]
 Faqat [0,π]
-#Har qanday bir davrli oraliqda
+# Har qanday bir davrli oraliqda
 Faqat [−1,1]
 +++++
-[0; π] oraliqda sinuslar orqali yozilgan Furye qatori qanday funksiyalarga mos keladi?=
-Juft funksiyalar=
-#Toq funksiyalar
+ [0; π] oraliqda sinuslar orqali yozilgan Furye qatori qanday funksiyalarga mos keladi?=
+ Juft funksiyalar=
+#  Toq funksiyalar
 Har qanday funksiyalar
-Uzluksiz funksiyalar
+ Uzluksiz funksiyalar
++++++
+Quyidagi qaysi formulalar Furye koeffitsiyentlari hisoblanadi?
+<em>a<sub>n</sub>=∫f(x)dx</em>
+#  <img src="https://hemis.fstu.uz/static/uploads/5/ahxnq_9ngWByRTTW5zqbIvkAyDjlFZBH.png" width="180" height="56">
+<em>a<sub>n</sub>=e<sup>x</sup> , b<sub>n</sub>=lnx</em>
+<em>a<sub>n</sub>=x<sup>n</sup>, b<sub>n</sub>=sinnx</em>
 +++++
 Dirixle teoremasiga ko‘ra Furye qatori qanday hollarda funksiya qiymatiga yaqinlashadi?
 Faqat uzluksiz bo‘lsa
 Faqat differensiallanuvchi bo‘lsa
-#Har bir nuqtada uzluksiz bo‘lsa 
-Faqat to‘g‘ri chiziqli funksiyalar bo‘lsa
+#  Har bir nuqtada uzluksiz bo‘lsa 
+ Faqat to‘g‘ri chiziqli funksiyalar bo‘lsa
 +++++
-Ortogonal funksiyalarni Furye qatoriga yoyishda qanday ustunlik mavjud?
+ Ortogonal funksiyalarni Furye qatoriga yoyishda qanday ustunlik mavjud?
 Hisoblash osonligi
 Ko‘paytuvchilarni nolga tenglashtirish imkoniyati
-#Har bir koeffitsiyent mustaqil hisoblanishi
+# Har bir koeffitsiyent mustaqil hisoblanishi
 Integrallar mavjud bo‘lmaydi
 +++++
 [0; π] oraliqda aniqlangan funksiya faqat sinuslar orqali yoyilsa, bu qanday qator hisoblanadi?
 Kosinuslar qatori
 To‘liq Furye qatori
-#Sinuslar qatori
+# Sinuslar qatori
 Kompleks qator
 +++++
 Juft funksiyalar uchun Furye qatori qanday ko‘rinish oladi?
-#Faqat kosinuslar orqali yoziladi 
-Faqat sinuslar orqali yoziladi=
-Sinus va kosinuslar aralash=
-Kompleks eksponentlar orqali
+# Faqat kosinuslar orqali yoziladi 
+Faqat sinuslar orqali yoziladi
+Sinus va kosinuslar aralash
+ Kompleks eksponentlar orqali
 +++++
 Quyidagi funksiyalardan qaysi biri juft funksiyadir?
 f(x)=sinx
 f(x)=x<sup>3</sup>
-#f(x)=cosx
+# f(x)=cosx
 f(x)=tgx
++++++
+Kompleks shakldagi Furye qatori qanday ifodalanadi?
+f(x)=∑a<sub>n</sub> sin(nx)+b<sub>n</sub> cos(nx)
+# <img src="https://hemis.fstu.uz/static/uploads/5/5iAhae2KubozYa5YXmRCPA7ZJos9Pg-p.png" width="137" height="28">
+f(x)=∑x<sub>n</sub>
+f(x)=∫f(x)dx
 +++++
 Toq funksiyalar uchun Furye qatori qanday ko‘rinish oladi?
 Faqat kosinuslar orqali yoziladi 
-#Faqat sinuslar orqali yoziladi=
-Faqat eksponentlar orqali=
+# Faqat sinuslar orqali yoziladi
+ Faqat eksponentlar orqali
 Nolga teng bo‘ladi
 +++++
 Furye qatori qanday sohalarda qo‘llaniladi?
 Faqat matematika
 Faqat fizika
-#Matematika, fizika va texnika sohalari
+# Matematika, fizika va texnika sohalari
 Faqat raqamli hisoblash
++++++
+Kompleks Furye qatoridagi c<sub>n</sub> koeffitsiyenti qanday aniqlanadi?
+c<sub>n</sub>=∫f(x)dx
+# <img src="https://hemis.fstu.uz/static/uploads/5/q0pGvfkVxwAKgeD2d1NAPPmpn1iTeMim.png" width="148" height="31">
+c<sub>n</sub>=cos(nx)
+c<sub>n</sub>=1/n!
 +++++
 Furye qatorining real hayotdagi biror tatbiqini ko‘rsating:
 Trigonometrik tenglamalarni yechish
-#Signallarni tahlil qilish va siqish 
-Matritsa ko‘paytmasini hisoblash=
+# Signallarni tahlil qilish va siqish 
+Matritsa ko‘paytmasini hisoblash
 Derivativni olish
 +++++
 Vektor funksiya nima?
 Biror sonni ifodalaydi
 Faqat modulga ega bo‘lgan funksiya
-#Har bir qiymatiga vektor mos tushadigan funksiya 
+# Har bir qiymatiga vektor mos tushadigan funksiya 
 Grafikda aylana chizadi
 +++++
-Quyidagi funksiyaning gradiyenti topilsin: f(x,y)=x<sup>2</sup>+y<sup>2</sup>
-(x,y)
-#(2x,2y)
-(x<sup>2</sup>,y<sup>2</sup>)
-(√x ,√y)
-+++++
-Integral tartibini o‘zgartirish uchun avval nima aniqlanadi?
-Funksiya grafigi
-#D sohaning chegaralari
-Qutb burchagi
-Egri integralning chegarasi
-+++++
 Quyidagi qaysi formulada vektor funksiyaning hosilasi ko‘rsatilgan?
-#<img src="https://hemis.fstu.uz/static/uploads/5/Hb2c2VMG5LzpEX7LkR6DK5UpRvCf8cvK.png" width="107" height="32">
+# <img src="https://hemis.fstu.uz/static/uploads/5/Hb2c2VMG5LzpEX7LkR6DK5UpRvCf8cvK.png" width="107" height="32">
 <img src="https://hemis.fstu.uz/static/uploads/5/hFUGrHN3-JbGOi8X5Sux8AxwvlkV0pXR.png" width="89" height="29">
 <img src="https://hemis.fstu.uz/static/uploads/5/jDuYvsP259xst29iXtsb0cDJPpwqucC_.png" width="78" height="25">
 <img src="https://hemis.fstu.uz/static/uploads/5/ZG7tS2dUs9exX5fr8gIoH40-uoJvX157.png" width="67" height="26">
@@ -580,282 +580,329 @@ Quyidagi qaysi formulada vektor funksiyaning hosilasi ko‘rsatilgan?
 Vektor funksiyaning uzluksiz bo‘lishi uchun nima talab qilinadi?
 Har doim manfiy bo‘lishi kerak
 Vaqtga bog‘liq bo‘lmasligi kerak
-#Uning barcha komponentlari uzluksiz bo‘lishi kerak 
+# Uning barcha komponentlari uzluksiz bo‘lishi kerak 
 U integrallanadigan bo‘lishi kerak
 +++++
 Egri chiziq qanday hosil qilinadi?
 To‘g‘ri chiziqli harakat bilan
-#Biror vektor funksiyaning qiymatlaridan 
+# Biror vektor funksiyaning qiymatlaridan 
 Raqamlar ketma-ketligidan
 Aylana tenglamasidan
 +++++
 Fazodagi egri chiziqlarni chizishda kompyuter dasturlari qanday vazifani bajaradi?
 Qog‘ozda chizishni osonlashtiradi
 Analitik yechimlarni topadi
-#Grafiklarni vizuallashtiradi 
+# Grafiklarni vizuallashtiradi 
 Matematik model yaratmaydi
 +++++
 Snaryad harakati qanday ifodalanadi?
-#Egri chiziq bo‘yicha harakatda doimiy tezlanish mavjud
+# Egri chiziq bo‘yicha harakatda doimiy tezlanish mavjud
 Doimiy tezlik bilan harakat
-Faqat to‘g‘ri chiziqli harakat=
+Faqat to‘g‘ri chiziqli harakat
 Holat o‘zgarmaydi
 +++++
 Keplerning birinchi qonuni nimani bildiradi?
-#Sayyora elliptik orbita bo‘ylab Quyosh atrofida harakat qiladi
+# Sayyora elliptik orbita bo‘ylab Quyosh atrofida harakat qiladi
 Harakat doimiy radiusda bo‘ladi
 Harakat to‘g‘ri chiziqli bo‘ladi
 Doimiy tezlikda aylanadi
 +++++
-Quyidagi ifoda nimani anglatadi? ∬<sub>D</sub>f(x,y) dxdy
-Egri integral
-Oddiy integral
-#Ikki karrali integral
-Hajm integrali
+Vektor funksiyaning integrali qanday yoziladi?
+# <img src="https://hemis.fstu.uz/static/uploads/5/n9d77s09oiXeGj9rWSuBfmvImEwDaDD6.png" width="77" height="32">
+<img src="https://hemis.fstu.uz/static/uploads/5/nbTRx2FY-5p_7sH6KItHxh9YweJtYFHl.png" width="53" height="30">
+<img src="https://hemis.fstu.uz/static/uploads/5/sNXQXMhHyt_EJvXk573g4EhmDQhpeBQB.png" width="52" height="53">
+<img src="https://hemis.fstu.uz/static/uploads/5/2o5kHlD-xHXLOQGshyUK-c1cYf0XyUOK.png" width="87" height="30">
++++++
+Quyidagi funksiyaning gradiyenti topilsin: f(x,y)=x<sup>2</sup>+y<sup>2</sup>
+(x,y)
+# (2x,2y)
+(x<sup>2</sup>,y<sup>2</sup>)
+(√x ,√y)
 +++++
 Vektor funksiyaning limit mavjud bo‘lishi uchun nima bo‘lishi kerak?
-#Har bir komponenti uchun limit mavjud bo‘lishi =
-Uning uzunligi nolga teng bo‘lishi=
-Egri chiziq chizilishi kerak=
+# Har bir komponenti uchun limit mavjud bo‘lishi 
+Uning uzunligi nolga teng bo‘lishi
+Egri chiziq chizilishi kerak
 Kompyuterda chizilishi shart
 +++++
-Vektorlarning differensiallash qoidalari nima uchun kerak?=
-Fazoda rasm chizish uchun
-#Harakat yo‘nalishini aniqlash uchun 
-Tenglama yechish uchun emas=
+Vektorlarning differensiallash qoidalari nima uchun kerak?
+ Fazoda rasm chizish uchun
+# Harakat yo‘nalishini aniqlash uchun 
+Tenglama yechish uchun emas
 Egri chiziqni yuvish uchun
 +++++
 Quyidagi dasturlardan qaysi biri fazodagi egri chiziqlarni chizishda qo‘llaniladi?
-MS Word=
-#Maple =
-Excel=
+MS Word
+# Maple 
+Excel
 PowerPoint
 +++++
 Harakatning tezligi qanday aniqlanadi?
-#Vektor funksiyaning birinchi tartibli hosilasi orqali
-Ikkinchi hosila orqali=
-Integral orqali=
+ # Vektor funksiyaning birinchi tartibli hosilasi orqali
+Ikkinchi hosila orqali
+Integral orqali
 Chiziqli tenglama orqali
 +++++
 Urinma komponentasi nima?
 Tezlanishning egrilikka perpendikulyar qismini bildiradi
-#Tezlik yo‘nalishidagi komponenta
+# Tezlik yo‘nalishidagi komponenta
 Radius vektorning uzunligi
 Vaqtdan mustaqil qiymat
 +++++
 Normal komponenta qanday aniqlanadi?
 Tezlikka teng
 Egri chiziqqa urinma yo‘nalishda bo‘ladi
-#Tezlikka perpendikulyar komponenta
+# Tezlikka perpendikulyar komponenta
 Nolinchi qiymat
 +++++
 Binormal vektor nima?
 Radiusga teng vektor
-#T va N vektorlarining vektor ko‘paytmasi
+# T va N vektorlarining vektor ko‘paytmasi
 Vaqtdan mustaqil vektor
 Funksiya grafigi
 +++++
 Funksiyaning limit qiymati mavjud bo‘lishi uchun qanday shart bajarilishi kerak?
 Har bir nuqtada hosila bo‘lishi kerak
-#Har bir yo‘nalishda limit bir xil bo‘lishi kerak 
+# Har bir yo‘nalishda limit bir xil bo‘lishi kerak 
 Gradient mavjud bo‘lishi kerak
 Uzluksiz bo‘lishi kerak
 +++++
 Funksiya f(x,y)=x^2+y^2 da sath chiziqlari qanday ko‘rinishga ega?
 To‘g‘ri chiziqlar
 Parabolalar
-#Doiralar
+# Doiralar
 Ellipslar
 +++++
 Funksiyaning limit qiymati mavjud bo‘lishi uchun qanday shart bajarilishi kerak?
 Har bir nuqtada hosila bo‘lishi kerak
-#Har bir yo‘nalishda limit bir xil bo‘lishi kerak 
+# Har bir yo‘nalishda limit bir xil bo‘lishi kerak 
 Gradient mavjud bo‘lishi kerak
 Uzluksiz bo‘lishi kerak
 +++++
 Ikki o‘zgaruvchili funksiyaning grafigi qanday geometrik ob'ekt hosil qiladi?
 Egri chiziq
 Tekislik
-#Sirt 
+# Sirt 
 To‘g‘ri chiziq
 +++++
 To‘la differensial tushunchasi nimani bildiradi?
 Ikki hosilaning yig‘indisi
 Funksiyaning limitini hisoblash usuli
-#Xususiy hosilalar orqali funksiya ortishining yaqin qiymatini hisoblash 
+# Xususiy hosilalar orqali funksiya ortishining yaqin qiymatini hisoblash 
 Funksiyani integrallash usuli
 +++++
 Murakkab funksiya hosilasini topishda nima qo‘llaniladi?
-Newton formulasi
-#Zanjir qoidasi 
-Limit qoidasi
-Simpson qoidasi
+ Newton formulasi
+# Zanjir qoidasi 
+ Limit qoidasi
+ Simpson qoidasi
 +++++
-Yo‘nalishli hosila nimani bildiradi?
-#Funksiya yo‘nalish bo‘yicha ortishini o‘lchaydi 
-Xususiy hosilalarning yig‘indisini
-Funksiyaning aniqlanish sohasini
-Gradientni nolga tenglashtirishni
+ Yo‘nalishli hosila nimani bildiradi?
+# Funksiya yo‘nalish bo‘yicha ortishini o‘lchaydi 
+ Xususiy hosilalarning yig‘indisini
+ Funksiyaning aniqlanish sohasini
+ Gradientni nolga tenglashtirishni
 +++++
 Gradient vektor nima?
-Raqamli qiymat
-Funksiya ortishining eng sekin yo‘nalishi
-#Funksiya ortishining eng tez yo‘nalishini bildiruvchi vektor 
+ Raqamli qiymat
+ Funksiya ortishining eng sekin yo‘nalishi
+# Funksiya ortishining eng tez yo‘nalishini bildiruvchi vektor 
 Yassi chiziq
 +++++
 Urinma tekislik nima?
-Har qanday chiziq
-Tekislik ustidagi istalgan nuqta
-Funksiya grafigi ostidagi yuzani
-#Ikki o‘zgaruvchili funksiyaning grafigida nuqtadagi tangensial sirt 
+ Har qanday chiziq
+ Tekislik ustidagi istalgan nuqta
+ Funksiya grafigi ostidagi yuzani
+# Ikki o‘zgaruvchili funksiyaning grafigida nuqtadagi tangensial sirt 
 +++++
 Funksiya ekstremumi nima?
-Funksiyaning istalgan qiymati
-#Funksiyaning eng katta va eng kichik qiymatlari joylashgan nuqtalar 
-Hosilaning qiymati
-Funksiya grafigining tangensi
+ Funksiyaning istalgan qiymati
+# Funksiyaning eng katta va eng kichik qiymatlari joylashgan nuqtalar 
+ Hosilaning qiymati
+ Funksiya grafigining tangensi
 +++++
 Ikki o‘zgaruvchili funksiya ekstremumlari qaysi nuqtalarda bo‘ladi?
-Hosila mavjud bo‘lmagan nuqtalarda
-#Xususiy hosilalar nolga teng bo‘lgan nuqtalarda 
-Faqat maksimum nuqtalarda
-Cheksiz nuqtalarda
+ Hosila mavjud bo‘lmagan nuqtalarda
+# Xususiy hosilalar nolga teng bo‘lgan nuqtalarda 
+ Faqat maksimum nuqtalarda
+ Cheksiz nuqtalarda
++++++
+Lagranj ko‘paytuvchisi nimani bildiradi?
+ Shartni o‘chirib tashlash koeffitsiyenti
+# Shartni hisobga oluvchi o‘zgaruvchi
+ Mahsulot ko‘rsatkichi
+ Hosila qiymati
 +++++
 Funksiyaning yopiq sohadagi ekstremumini topish uchun nima qilinadi?
-Faqat ichki nuqtalar tekshiriladi
-#Ichki va chegaraviy nuqtalar alohida ko‘riladi
-Faqat gradientga qaraladi
-Limit orqali aniqlanadi
+ Faqat ichki nuqtalar tekshiriladi
+# Ichki va chegaraviy nuqtalar alohida ko‘riladi
+ Faqat gradientga qaraladi
+ Limit orqali aniqlanadi
++++++
+Lagranj usulida qanday tenglamalar tuziladi?
+ Faqat gradientlar tenglamalari
+# Funksiya va shart hosilalari tenglashtiriladi
+ Integral tenglamalari
+ Grafigi chiziladi
 +++++
 Ikki karrali integral nimalarni hisoblash uchun ishlatiladi?
-Egri chiziq uzunligini topish uchun
-Sirt ustidagi oqimni aniqlash uchun
-#Yuzalar ostidagi hajm yoki maydonni aniqlash uchun
-Faqat fizik kuchni hisoblash uchun
+ Egri chiziq uzunligini topish uchun
+ Sirt ustidagi oqimni aniqlash uchun
+# Yuzalar ostidagi hajm yoki maydonni aniqlash uchun
+ Faqat fizik kuchni hisoblash uchun
 +++++
 Ikki karrali integralning geometrik ma’nosi nimani bildiradi?
-Yoy uzunligi
-Egri chiziq maydoni
-#Funksiya grafigi ostidagi sirtning hajmi 
-Fazoviy burilish
+ Yoy uzunligi
+ Egri chiziq maydoni
+# Funksiya grafigi ostidagi sirtning hajmi 
+ Fazoviy burilish
++++++
+Quyidagi ifoda nimani anglatadi? ∬<sub>D</sub>f(x,y) dxdy
+Egri integral
+Oddiy integral
+# Ikki karrali integral
+Hajm integrali
 +++++
 Ikki karrali integral mavjud bo‘lishi uchun qanday shart kerak?
-Faqat x o‘zgaruvchiga bog‘liqlik bo‘lishi kerak
-#Funksiya chegaralangan va D soha o‘lchovli bo‘lishi kerak 
-Cheksiz maydon bo‘lishi kerak
-Funksiya hosilalanadigan bo‘lishi kerak
+ Faqat x o‘zgaruvchiga bog‘liqlik bo‘lishi kerak
+# Funksiya chegaralangan va D soha o‘lchovli bo‘lishi kerak 
+ Cheksiz maydon bo‘lishi kerak
+ Funksiya hosilalanadigan bo‘lishi kerak
 +++++
 Funksiya f(x,y) ijobiy va uzluksiz bo‘lsa, unda uning ikki karrali integrali qanday qiymatga ega bo‘ladi?
-Har doim manfiy
-Har doim nol
-#musbat yoki nol 
-Cheksiz
+ Har doim manfiy
+ Har doim nol
+# musbat yoki nol 
+ Cheksiz
 +++++
 Koordinatalarni o‘zgartirishda ikki karrali integral qanday ko‘rinishda yoziladi (qisqacha)?
-#Jacobian ko‘paytmasi bilan ko‘paytiriladi 
-Limiti o‘zgaradi
-Funksiya kvadratlarga bo‘linadi
-Ikki baravar kamayadi
+# Jacobian ko‘paytmasi bilan ko‘paytiriladi 
+ Limiti o‘zgaradi
+ Funksiya kvadratlarga bo‘linadi
+ Ikki baravar kamayadi
 +++++
 Ikki karrali integralda integrallash tartibini o‘zgartirish uchun qanday shart bajarilishi kerak?
-Funksiya differensiallanuvchi bo‘lishi kerak
-Sohaning chegarasi chiziqli bo‘lishi kerak
-#Funksiya va soha o‘zaro chegaralangan bo‘lishi kerak 
-Faoliyatli koordinatalar bo‘lishi kerak
+ Funksiya differensiallanuvchi bo‘lishi kerak
+ Sohaning chegarasi chiziqli bo‘lishi kerak
+# Funksiya va soha o‘zaro chegaralangan bo‘lishi kerak 
+ Faoliyatli koordinatalar bo‘lishi kerak
 +++++
 Quyidagi ikki karrali integral qanday ifodalanadi? ∬<sub>D</sub>f(x,y) dxdy
 Faqat egri integral sifatida
 Sohadagi funksiya qiymatining maksimal nuqtasi sifatida
-#D sohadagi f(x,y) funksiyaning sirt ostidagi hajmi sifatida
+# D sohadagi f(x,y) funksiyaning sirt ostidagi hajmi sifatida
 Hech qanday geometrik ma’noga ega emas
 +++++
 Quyidagi formulada qanday o‘zgarish ifodalangan? ∬<sub>D</sub>f(x,y)dxdy=∬<sub>D* </sub>f(rcosθ,rsinθ)⋅r drdθ
-#Qutb koordinatalariga o‘tish
+# Qutb koordinatalariga o‘tish
 Egri integralga aylantirish
 Yagona integralga aylantirish
 Hech qanday o‘zgarish emas
 +++++
 Qanday holatda o‘zgaruvchilarni almashtirish foydali bo‘ladi?
-Funksiya aniqlanmagan bo‘lsa
-#Soha murakkab shaklda bo‘lsa
-Integral oddiy bo‘lsa
-O‘zgarmas limitlar bo‘lsa
+ Funksiya aniqlanmagan bo‘lsa
+# Soha murakkab shaklda bo‘lsa
+ Integral oddiy bo‘lsa
+ O‘zgarmas limitlar bo‘lsa
 +++++
-Dekart koordinatalarida to‘g‘ri to‘rtburchak sohadagi integral qanday hisoblanadi?  <img src="https://hemis.fstu.uz/static/uploads/5/JLauJ4S8v2H-KhWqCLv-6x5pLEA0hMkF.png" width="324" height="44">  Bu qanday deganidir?
+Dekart koordinatalarida to‘g‘ri to‘rtburchak sohadagi integral qanday hisoblanadi?  <img src="https://hemis.fstu.uz/static/uploads/5/JLauJ4S8v2H-KhWqCLv-6x5pLEA0hMkF.png" width="324" height="44">  Bu qanday deganidir?
 Ikki marta hosila olish
-#Tartiblangan iteratsion integrallash
+# Tartiblangan iteratsion integrallash
 Egri chiziq bo‘yicha integrallash
 Ko‘p nuqtali limit olish
 +++++
+ Integral tartibini o‘zgartirish uchun avval nima aniqlanadi?
+Funksiya grafigi
+# D sohaning chegaralari
+Qutb burchagi
+Egri integralning chegarasi
++++++
+Yuqori tartibli xususiy hosilalarning belgilanishi qaysi?
+f' (x,y)
+# (∂<sup>2</sup> f)/(∂x<sup>2</sup> )
+∫f(x,y)dx/dy
+f''(x)
++++++
 Gradient vektori qanday aniqlanadi?
 ∇f=∂f/∂x+∂f/∂y
-#∇f=(f<sub>x</sub>,f<sub>y</sub>)
+# ∇f=(f<sub>x</sub>,f<sub>y</sub>)
 ∇f=f(x,y)
 ∇f=fx<sup>2</sup>+fy<sup>2</sup>
 +++++
+Lagranj funksiyasi qanday ko‘rinishga ega?
+# L=f(x,y)+λ⋅g(x,y)
+L=f(x,y)−g(x,y)
+L=∂f/∂x+∂g/∂y
+L=x<sup>2</sup>+y<sup>2</sup>
++++++
+f(x,y)=x<sup>2</sup>+y<sup>2</sup> funksiyaning shartsiz minimumi qayerda bo‘ladi?
+# (0,0)
+(1,1)
+(x,y)→∞
+Bunday nuqta mavjud emas
++++++
 Egri chiziq uzunligi quyidagi formula bilan ifodalanadi:
-#<img src="https://hemis.fstu.uz/static/uploads/5/Afs5ibhuzGvWW3HPRTJf5XyJVVKHNF0e.png" width="125" height="29">
+# <img src="https://hemis.fstu.uz/static/uploads/5/Afs5ibhuzGvWW3HPRTJf5XyJVVKHNF0e.png" width="125" height="29">
 ∫f(x) dx
 f(b)−f(a)
 ∫f' (x)<sup>2</sup> dx
++++++
 Yoy uzunligi vektor funksiyasi orqali qanday hisoblanadi?
+# <img src="https://hemis.fstu.uz/static/uploads/5/K7h6-XBNc-pAdw8omYgIx2W90t20a-nS.png">
+<img src="https://hemis.fstu.uz/static/uploads/5/c6CVfOfl8U3dB5AHXjY0_0V0mq507E76.png">
+<img src="https://hemis.fstu.uz/static/uploads/5/Df5mVvmnf9LvRkTt_b8mSxIbniYYTHjk.png">
+<img src="https://hemis.fstu.uz/static/uploads/5/qaFWbNNyZodkpyPavVwSVxwMjkoFkQ43.png">
 +++++
 ∇f(x,y,z)=(∂f/∂x,∂f/∂y,∂f/∂z) – bu nima? 
 Divergensiya 
 Rotatsiya  
-#Gradiyent  
-Integral
+# Gradiyent  
+ Integral
 +++++
-<img src="https://hemis.fstu.uz/static/uploads/5/_r3dqxA8H971KZlX7jofi967T3MrDbvt.png" width="116" height="35">   funksiyasi qachon aniqlanmagan bo‘ladi?
-#x<sup>2</sup>+y<sup>2</sup>=1
+<img src="https://hemis.fstu.uz/static/uploads/5/_r3dqxA8H971KZlX7jofi967T3MrDbvt.png" width="116" height="35">   funksiyasi qachon aniqlanmagan bo‘ladi?
+# x<sup>2</sup>+y<sup>2</sup>=1
 x=0
 y=0
 x<sup>2</sup>+y<sup>2</sup>&gt;1
 +++++
 f(x,y)=x^2 y+y^3 funksiyaning to‘la differensiali qanday ifodalanadi?
 df=2xydx+3y<sup>2</sup> dy
-#df=2xydx+(x<sup>2</sup>+3y<sup>2</sup>)dy
+# df=2xydx+(x<sup>2</sup>+3y<sup>2</sup>)dy
 df=x<sup>2</sup> dx+y<sup>3</sup> dy
 df=xdx+ydy
 +++++
 Egrilik (krivizna) formulasi quyidagicha ifodalanadi:
-#<img src="https://hemis.fstu.uz/static/uploads/5/2NWveJj2b0Rub6z7Wh5SRK0eeawxyZFF.png">
+# <img src="https://hemis.fstu.uz/static/uploads/5/2NWveJj2b0Rub6z7Wh5SRK0eeawxyZFF.png">
 <img src="https://hemis.fstu.uz/static/uploads/5/dcZ4SqSv8Z07V7xLFKoUc_IT6AkVgC-d.png">
 <img src="https://hemis.fstu.uz/static/uploads/5/Mbi6KhHl9OMZAikSjz0ZPDs4b_DAmSI_.png">
 <img src="https://hemis.fstu.uz/static/uploads/5/qDx8fMHmrROwNBftpyxEmahZoT8_MkOE.png">
 +++++
-Quyidagi ikki karrali integral qutb koordinatalariga o‘tganda qanday ifodalanadi? ∬<sub>D</sub>〖x<sup>2</sup>+y<sup>2</sup> 〗 dxdy
-#∬<sub>D*</sub>r<sup>2</sup> ⋅r drdθ=∬r<sup>3</sup> drdθ
-∬r<sup>2</sup> drdθ
-∬r drdθ
-∬r<sup>2</sup>+θ<sup>2</sup> drdθ
-+++++
 Tezlanish vektorini qanday topamiz?
-#<img src="https://hemis.fstu.uz/static/uploads/5/-rnWSvgkFpOkLpqI2ilr16bBEnCcBsaf.png" width="159" height="28">
+#  <img src="https://hemis.fstu.uz/static/uploads/5/-rnWSvgkFpOkLpqI2ilr16bBEnCcBsaf.png" width="159" height="28">
 <img src="https://hemis.fstu.uz/static/uploads/5/uwHw_TFZrg9KM1txxj5kl-gPqGBhPCFm.png">
 <img src="https://hemis.fstu.uz/static/uploads/5/6Oe-D7cAbMnU84SIvenjFmkxAPFkeiJN.png">
 <img src="https://hemis.fstu.uz/static/uploads/5/3P4ft9aEphXhLDftassBSnSt61Se6OqJ.png" width="134" height="30">
 +++++
 Funksiya <img src="https://hemis.fstu.uz/static/uploads/5/rFM9OTLlxx34yJsFRf8wUjXlutFp9UxO.png" width="102" height="21"> ning aniqlanish sohasi qanday shart bilan belgilanadi?
 x+y≥0
-#x−y≥0
+# x−y≥0
 x⋅y≥0
 x−y≤0
 +++++
 Xususiy hosila quyidagilardan qaysi biri bilan ifodalanadi?
 df/dx
-#∂f/∂x
+# ∂f/∂x
 f'(x,y)
 ∫f(x)dx
 +++++
 To‘liq orttirma formulasini ko‘rsating:
-#df=f<sub>x</sub>⋅dx+f<sub>y</sub>⋅dy
+# df=f<sub>x</sub>⋅dx+f<sub>y</sub>⋅dy
 df=f(x,y)⋅dxdy
 df=f<sub>x</sub>⋅dy
 df=√(f<sub>x</sub><sup>2</sup>+f<sub>y</sub><sup>2</sup> )
 +++++
 f(x,y)=x<sup>2</sup> y+y<sup>3</sup> funksiyaning x bo‘yicha xususiy hosilasi qanday?
-#2xy
+# 2xy
 y<sup>2</sup>
 x<sup>2</sup>
 3y<sup>2</sup>
@@ -864,155 +911,191 @@ f(x,y)=ln(x<sup>2</sup>+y<sup>2</sup>) funksiyasi qayerda aniqlanmagan?
 x=y
 x=0
 x<sup>2</sup>+y<sup>2</sup>=1
-#x=0, y=0
+# x=0, y=0
++++++
+f(x,y)=x<sup>2</sup>+y<sup>2</sup>, sharti: x+y=1. Lagranj funksiyasi qanday tuziladi?
+L=x<sup>2</sup>+y<sup>2</sup>−(x+y)
+# L=x<sup>2</sup>+y<sup>2</sup>+λ(x+y−1)
+L=x+y+λ(x<sup>2</sup>+y<sup>2</sup>)
+L=λ(x+y+1)
 +++++
 Ikki karrali integralning chiziqli kombinatsiyasi uchun qanday xossa mavjud?
-#<img src="https://hemis.fstu.uz/static/uploads/5/6iC4xz6N_dJCRQjwFsM_IDeXHRdFnWZ_.png" width="285" height="58">
+# <img src="https://hemis.fstu.uz/static/uploads/5/6iC4xz6N_dJCRQjwFsM_IDeXHRdFnWZ_.png" width="285" height="58">
 <img src="https://hemis.fstu.uz/static/uploads/5/har03KWVvEUBM7z-ectW6nj-AGjjvmxk.png" width="338" height="35">
 <img src="https://hemis.fstu.uz/static/uploads/5/KIeDoqaI6PLrtugj4at5VvmH6mYMGiR2.png" width="177" height="31">
 Yuqoridagilarning hech biri
 +++++
 O‘rta qiymat teoremasiga ko‘ra, agar f(x,y) funksiyasi uzluksiz bo‘lsa, u holda:
-#∬<sub>D</sub>f(x,y) dxdy=f(x<sub>0</sub>,y<sub>0</sub>)⋅S(D)
+# ∬<sub>D</sub>f(x,y) dxdy=f(x<sub>0</sub>,y<sub>0</sub>)⋅S(D)
 ∬<sub>D</sub>f(x,y) dxdy=0
 ∬<sub>D</sub>f(x,y) dxdy=∇f(x,y)
 ∬<sub>D</sub>f(x,y) dxdy=f''(x,y)
 +++++
 Quyidagi xossa qaysi integralga tegishli? ∬<sub>D</sub>1⋅dxdy=S(D)
 Oddiy integral
-#Ikki karrali integral
+# Ikki karrali integral
 Chegaraviy integral
 Vektor integral
++++++
+Quyidagi ikki karrali integral qutb koordinatalariga o‘tganda qanday ifodalanadi? ∬<sub>D</sub>〖x<sup>2</sup>+y<sup>2</sup> 〗 dxdy
+# ∬<sub>D*</sub>r<sup>2</sup> ⋅r drdθ=∬r<sup>3</sup> drdθ
+∬r<sup>2</sup> drdθ
+∬r drdθ
+∬r<sup>2</sup>+θ<sup>2</sup> drdθ
 +++++
 Funksiya f(x,y)=x<sup>2</sup>+y<sup>2</sup> da sath chiziqlari qanday ko‘rinishga ega?
 To‘g‘ri chiziqlar
 Parabolalar
-#Doiralar
+# Doiralar
 Ellipslar
++++++
+Quyidagilardan qaysi biri statik momentga misol bo‘la oladi?
+<img src="https://hemis.fstu.uz/static/uploads/5/5crW4XHi31BSiN43W8fihwLAc_dR_EFw.png" width="138" height="34">
+# <img src="https://hemis.fstu.uz/static/uploads/5/n83UsmuCst1-jc9DYALz4dqSsLgVf1a9.png" width="137" height="33">
+<img src="https://hemis.fstu.uz/static/uploads/5/mjhLB3KcV5WPRqQ2XnV-RwjHISKsSXeZ.png" width="81" height="34">
+<img src="https://hemis.fstu.uz/static/uploads/5/mKg7X5j-WChlsITw_JmSQPY_-d4nS-wy.png" width="78" height="26">
 +++++
 Fazoda egri chiziqli integral qanday parametrik ko‘rinishda beriladi? 
 (x(t),y(t)) 
-#(x(t),y(t),z(t))   
+# (x(t),y(t),z(t))   
 (r,θ)  
 (u,v)
++++++
+Inersiya momenti uchun to‘g‘ri formulani ko‘rsating:
+#  <img src="https://hemis.fstu.uz/static/uploads/5/9N0Tep7fi4msXFMcN0nzzp2Y1OUGHAcq.png" width="171" height="27">
+<img src="https://hemis.fstu.uz/static/uploads/5/uZsEhmgXezAhd0BfuVpdAD3yO_RwGR0q.png" width="179" height="30">
+<img src="https://hemis.fstu.uz/static/uploads/5/6_9TcsRPNwRtpsjKNcpcqU5wuP5Qw65E.png" width="121" height="30">
+<img src="https://hemis.fstu.uz/static/uploads/5/Voe0CxirBKySGW3S0CEv5GyPnWJ1XEKP.png" width="91" height="29">
++++++
+Ikki karrali integralda zichlik ρ(x,y) doimiy bo‘lsa, massa qanday topiladi?
+# M=ρ⋅A(D)
+<img src="https://hemis.fstu.uz/static/uploads/5/JkidWS9mVhKDc9WhMKIC6yeu6zvrsamr.png" width="108" height="32">
+M=ρ(x+y)
+<img src="https://hemis.fstu.uz/static/uploads/5/mwlt4MuwsmG03-hjmP6yhXDXAE9EsHgK.png" width="85" height="21">
 +++++
 Uch karrali integral quyidagi ko‘rinishda yoziladi:
 ∫f(x) dx
 <img src="https://hemis.fstu.uz/static/uploads/5/aBW_4jWpMaQw6aTbbTp6QIcaAYam5wnf.png" width="117" height="28">
-#<img src="https://hemis.fstu.uz/static/uploads/5/4AjdzupML6rr2GAoYJp5io4otyiCSuir.png" width="156" height="29">
+# <img src="https://hemis.fstu.uz/static/uploads/5/4AjdzupML6rr2GAoYJp5io4otyiCSuir.png" width="156" height="29">
 ∫f(x,y) dx
++++++
+Massani topish uchun qanday ifodadan foydalaniladi?
+<img src="https://hemis.fstu.uz/static/uploads/5/79PJgS_DfVldj-BuUMlFIYm6CS4z9BoK.png" width="184" height="34">
+#  <img src="https://hemis.fstu.uz/static/uploads/5/fqg071Pd2RjZk47Id6LeI4m6NquuvT4O.png" width="174" height="36">
+<img src="https://hemis.fstu.uz/static/uploads/5/CR2xbRhchdzCSDawqr4dnc7tuF3Q4AEX.png" width="139" height="37">
+<img src="https://hemis.fstu.uz/static/uploads/5/U7MCyrchERH-3EQRmkStMAx_gz9xsLXO.png" width="114" height="33">
 +++++
 Sferik koordinatalar sistemasida Jakobian quyidagicha yoziladi:
 ρ
-#ρ<sup>2</sup>sinϕ
+# ρ<sup>2</sup>sinϕ
 ρsinθ
 ρ<sup>2</sup>cosϕ
 +++++
 Quyidagi ifoda nimani bildiradi: ∇⋅F ⃗ ? 
 Uyirma (rotatsiya) 
 Gradient  
-#Divergensiya  
+# Divergensiya  
 Laplasi operatori
 +++++
-Quyidagi uch karrali integralda sferik koordinatalar ishlatilgan bo‘lsa, Jakobian bilan birga qanday ifoda hosil bo‘ladi?  <img src="https://hemis.fstu.uz/static/uploads/5/ViyhOnDRU5kGuOi3EUa-cFs0tS8Q3_FB.png" width="242" height="53">
+Quyidagi uch karrali integralda sferik koordinatalar ishlatilgan bo‘lsa, Jakobian bilan birga qanday ifoda hosil bo‘ladi?  <img src="https://hemis.fstu.uz/static/uploads/5/ViyhOnDRU5kGuOi3EUa-cFs0tS8Q3_FB.png" width="242" height="53">
 ρ<sup>2</sup>cosϕ
-#ρ<sup>2</sup>sinϕ
+# ρ<sup>2</sup>sinϕ
 ρ<sup>2</sup>
 ρsinϕ
 +++++
-Quyidagi integral silindrik koordinatalarda ifodalang:  <img src="https://hemis.fstu.uz/static/uploads/5/1ncuJLU7jG7eQlp4YaG4EcBseDBREL4K.png" width="287" height="33">
-#<img src="https://hemis.fstu.uz/static/uploads/5/25lOSM7UlOJywm6d65CbYGNGT4o1iqy5.png" width="160" height="34">
-<img src="https://hemis.fstu.uz/static/uploads/5/5y28tipeknsOw8pc14P8RQZXbFOB6Y5_.png" width="143" height="36">
-<img src="https://hemis.fstu.uz/static/uploads/5/LxyDAplELn5tmvHpJ3HlPZ5xEkPpfxiu.png" width="140" height="35">
-<img src="https://hemis.fstu.uz/static/uploads/5/ZFIvApc71k-GnBuUxVzG6sormqCd_anI.png" width="139" height="33">
+Quyidagi integral silindrik koordinatalarda ifodalang:  <img src="https://hemis.fstu.uz/static/uploads/5/1ncuJLU7jG7eQlp4YaG4EcBseDBREL4K.png" width="287" height="33">
+#   <img src="https://hemis.fstu.uz/static/uploads/5/25lOSM7UlOJywm6d65CbYGNGT4o1iqy5.png" width="160" height="34">
+ <img src="https://hemis.fstu.uz/static/uploads/5/5y28tipeknsOw8pc14P8RQZXbFOB6Y5_.png" width="143" height="36">
+ <img src="https://hemis.fstu.uz/static/uploads/5/LxyDAplELn5tmvHpJ3HlPZ5xEkPpfxiu.png" width="140" height="35">
+ <img src="https://hemis.fstu.uz/static/uploads/5/ZFIvApc71k-GnBuUxVzG6sormqCd_anI.png" width="139" height="33">
 +++++
-Quyidagi ifoda qaysi turdagi egri chiziqli integralga tegishli? <img src="https://hemis.fstu.uz/static/uploads/5/DXq8X3s_BCGQdQpxvTeguYvjha5nqcsE.png" width="104" height="33">
-#I turdagi egri chiziqli integral
-II turdagi egri chiziqli integral
-Sirt integrali
-Uch karrali integral
-+++++
-Konservativ maydon uchun yopiq egri chiziq bo‘yicha integral qanday bo‘ladi? 
-1 
-#0   
-Trayektoriya uzunligiga teng  
-Har doim manfiy
+Silindrik koordinatalarni qo‘llash uchun geometrik soha qanday bo‘lishi kerak?
+ Yalpi sferik shakl
+# O‘q atrofida simmetrik bo‘lgan silindr yoki aylana 
+ Raqamli to‘plamlar
+ Kvadrat shaklli jism
 +++++
 Sferik koordinatalarda quyidagi hajmni topuvchi integral qanday yoziladi? Jism: radiusi 1 bo‘lgan shar.
-#<img src="https://hemis.fstu.uz/static/uploads/5/a6hW4brGSftm1FIe9CPNtdrsCqWhBLhg.png" width="348" height="33">
+# <img src="https://hemis.fstu.uz/static/uploads/5/a6hW4brGSftm1FIe9CPNtdrsCqWhBLhg.png" width="348" height="33">
 <img src="https://hemis.fstu.uz/static/uploads/5/tQavCGVKuH71qZL55d0zZ3xhAQMkBI73.png" width="138" height="32">
 <img src="https://hemis.fstu.uz/static/uploads/5/G5iG8xxQJTmUY_vRwJ4Haq3tDA_cA_Gx.png" width="107" height="32">
 <img src="https://hemis.fstu.uz/static/uploads/5/rM9GxACycYSEgkXK2yRXolRrniVlhW-f.png" width="156" height="31">
 +++++
-Quyidagi ifoda qanday maydonni bildiradi?  
+Quyidagi ifoda qanday maydonni bildiradi?  
 <img src="https://hemis.fstu.uz/static/uploads/5/BhBdNW7A7eXUvKK_ksQ22CbLD7UIMvQc.png" width="162" height="28">
 Skalyar maydon
-#Vektor maydon
+# Vektor maydon
 Gradiyent maydon
 Noto‘g‘ri
 +++++
 Gradiyent operatori qanday belgilanadi?
 Δ
-#∇
+# ∇
 ∫
 ∂
 +++++
 Gradiyent maydonini qanday topamiz? 
 Funksiyaga integral qo‘llash orqali 
 Vektor maydonni bo‘lish orqali  
-#Skalyar funksiyaga ∇ operatorini qo‘llab 
-Radiusni aylantirish orqali
+# Skalyar funksiyaga ∇ operatorini qo‘llab 
+ Radiusni aylantirish orqali
 +++++
 Gradiyent nimani ko‘rsatadi? 
 Eng past nuqtani 
 Massani  
 Funksiya qiymati  
-#Eng tez o‘sish yo‘nalishini 
+# Eng tez o‘sish yo‘nalishini 
 +++++
 Vektor maydon qanday funksiyadir? 
-#Har bir nuqtada vektor qiymatli funksiyadir  
+# Har bir nuqtada vektor qiymatli funksiyadir  
 Har bir nuqtada faqat bitta son beradi  
 Radiusli chiziq  
 Massani bildiruvchi chiziq
 +++++
 Vektor maydonga misol keltiring:
 f(x,y)=x+y
-#<img src="https://hemis.fstu.uz/static/uploads/5/DJzxn1cp8CdA5I59QGancQQU92QqYJpD.png" width="128" height="26">
+#  <img src="https://hemis.fstu.uz/static/uploads/5/DJzxn1cp8CdA5I59QGancQQU92QqYJpD.png" width="128" height="26">
 f(x)=x<sup>3</sup>
 y=√x
 +++++
 Gradiyent maydon har doim qanday maydon bo‘ladi? 
 Aylanma 
 Divergensiyali 
-#Konservativ  
-Garmonik
+#  Konservativ  
+ Garmonik
 +++++
-Quyidagi vektor maydon konservativ ekanligini qanday tekshirish mumkin? 
+ Quyidagi vektor maydon konservativ ekanligini qanday tekshirish mumkin? 
 Gradiyentni olish orqali 
 Divergensiyasini olish orqali  
-#Rotatsiyasi nolga tengligini tekshirish orqali  
+# Rotatsiyasi nolga tengligini tekshirish orqali  
 Integral orqali
 +++++
 Egri chiziqli integral nima? 
 Yoy uzunligi bo‘yicha olinadigan integral 
-#Egri chiziq bo‘ylab funksiyani integrallash   
+# Egri chiziq bo‘ylab funksiyani integrallash   
 Maydonni integrallash  
 Chiziqli funksiya limitini olish
++++++
+Quyidagi ifoda qaysi turdagi egri chiziqli integralga tegishli? <img src="https://hemis.fstu.uz/static/uploads/5/DXq8X3s_BCGQdQpxvTeguYvjha5nqcsE.png" width="104" height="33">
+# I turdagi egri chiziqli integral
+II turdagi egri chiziqli integral
+Sirt integrali
+Uch karrali integral
 +++++
 Egri chiziqli integralni hisoblashda parametrlar qanday rol o‘ynaydi? 
 Hech qanday 
 Chiziqni to‘g‘rilash uchun ishlatiladi  
-#Egri chiziqni parametrik ko‘rinishda ifodalashga yordam beradi   
+# Egri chiziqni parametrik ko‘rinishda ifodalashga yordam beradi   
 Soha chegarasini aniqlaydi
 +++++
 Egri chiziqli integralda ds nima ifodalaydi? 
 Radius 
-#Yoy elementining uzunligi  
+# Yoy elementining uzunligi  
 Vektor maydon yo‘nalishi  
 Massaning zichligi
 +++++
 Quyidagi ifoda qaysi sohani bildiradi? <img src="https://hemis.fstu.uz/static/uploads/5/HhwXopbETtSUSRLX9xRqQ5xMF-R2ujoc.png" width="259" height="26">
-#Vektor maydon bo‘yicha egri chiziqli integral
+# Vektor maydon bo‘yicha egri chiziqli integral
 Ikki karrali integral
 Konservativ maydon
 Skalyar funksiya integrali
@@ -1026,65 +1109,83 @@ O‘zgarmas son bo‘ladi
 Egri chiziqli integral fizikada nimani anglatadi? 
 Maydonlar rotatsiyasini 
 Jismning massasini  
-#Maydon bo‘yicha bajarilgan ishni   
+# Maydon bo‘yicha bajarilgan ishni   
 Harakat tenglamasini
 +++++
 Agar <img src="https://hemis.fstu.uz/static/uploads/5/UTcUaH-E5SAdX7jfCBqqldHRKOzxQOBq.png" width="52" height="23"> bo‘lsa, unda <img src="https://hemis.fstu.uz/static/uploads/5/l9JIE8X54Bg8MtzevuKf6BPO30XjR_CX.png" width="60" height="32"> ning qiymati qanday topiladi?
 f(x,y) ga bog‘liq bo‘lmagan son
-#Boshlang‘ich va oxirgi nuqtalardagi f qiymatlari farqi
+# Boshlang‘ich va oxirgi nuqtalardagi f qiymatlari farqi
 Nol
 Faqatgina egri chiziq bo‘yicha
 +++++
 Grin teoremasida chegaraviy egri chiziq qanday yo‘nalishda bo‘lishi kerak? 
 Ixtiyoriy 
 Orqaga yo‘nalgan  
-#Soat strelkasiga qarshi yo‘nalgan  
+# Soat strelkasiga qarshi yo‘nalgan  
 Vertikal yo‘nalishda
 +++++
 Egri chiziqli integralning fundamental teoremasi nimani bildiradi? 
 Integral faqat trayektoriya uzunligiga bog‘liq 
-#Integral qiymati boshlang‘ich va oxirgi nuqtalardagi funksiyaning qiymatlari farqiga teng   
+# Integral qiymati boshlang‘ich va oxirgi nuqtalardagi funksiyaning qiymatlari farqiga teng   
 Maydon yo‘nalishi asosida hisoblanadi  
 Integral nolga teng
 +++++
+Konservativ vektor maydoni nima? 
+Egri chiziqli integral yo‘lga bog‘liq bo‘lgan maydon 
+Divergensiyasi nolga teng bo‘lgan maydon  
+# Egri chiziqli integral faqat boshlang‘ich va oxirgi nuqtalarga bog‘liq bo‘lgan maydon   
+Maydon doimiy bo‘lgan joy
++++++
 Trayektoriyaning erkliligi deganda nima tushuniladi? 
 Harakat chiziqligidir 
-#Egri chiziqli integral qiymatining yo‘l shakliga bog‘liq emasligi  
+# Egri chiziqli integral qiymatining yo‘l shakliga bog‘liq emasligi  
 Trayektoriya uzunligining kamayishi  
 Trayektoriya chiziqli ekanligi
++++++
+Konservativ maydon uchun yopiq egri chiziq bo‘yicha integral qanday bo‘ladi? 
+1 
+# 0   
+Trayektoriya uzunligiga teng  
+Har doim manfiy
++++++
+Egri chiziqli integral orqali fizikadagi qanday kattalik ifodalanadi? 
+Impuls 
+Kuch  
+# Ish  
+Harorat
 +++++
 Energiya saqlanish qonuniga ko‘ra, konservativ kuchlar uchun… 
 Umumiy energiya kamayadi
 Kinetik energiya ortadi=
-#Potensial va kinetik energiya yig‘indisi o‘zgarmaydi 
+# Potensial va kinetik energiya yig‘indisi o‘zgarmaydi 
 Faqat kinetik energiya saqlanadi
 +++++
 Agar kuch maydoni konservativ bo‘lsa, uning rotatsiyasi qanday bo‘ladi? 
-#0  
+# 0  
 1  
 ∞ 
-#∇⋅F ⃗ 
+ ∇⋅F ⃗ 
 +++++
 Quyidagilardan qaysi biri energiyaning saqlanishiga bog‘liq fizik hodisadir? 
 Trayektoriya uzunligining ortishi 
 Harakatda energiya yo‘qolishi  
-#Potensial energiyaning kinetik energiyaga aylanishi  
+# Potensial energiyaning kinetik energiyaga aylanishi  
 Kuch ortishi
 +++++
 Grin teoremasi qanday sohada ishlatiladi? 
 Yopiq sirtlarda 
 Egri chiziq ustida  
-#Ikki o‘lchamli yopiq sohalarda   
+# Ikki o‘lchamli yopiq sohalarda   
 Fazoda harakatlanayotgan zarrachalar uchun
 +++++
 Umumlashgan Grin teoremasi qanday o‘lchamli fazoda ishlatiladi? 
 1D 
 2D  
-#Har qanday o‘lchamda (nD)  
+# Har qanday o‘lchamda (nD)  
 Faqat 3D
 +++++
 Grin teoremasining vektor shaklida qanday bog‘lanish mavjud? 
-#Uyirma va yopiq egri chiziq integrali o‘rtasida 
+# Uyirma va yopiq egri chiziq integrali o‘rtasida 
 Divergensiya va sirt integrali o‘rtasida  
 Gradient va funktsiya qiymati o‘rtasida  
 Integral va limit o‘rtasida
@@ -1092,230 +1193,217 @@ Integral va limit o‘rtasida
 Grin teoremasi bilan qanday fizik kattaliklarni hisoblash mumkin? 
 Harorat 
 Zichlik  
-#Ish yoki aylanish momenti 
-Kuch
+# Ish yoki aylanish momenti 
+ Kuch
 +++++
 Divergensiya fizikada nimani bildiradi? 
 Harakat tezligini 
 Maydon yo‘nalishini  
-#Maydondagi oqimning “chiqish” darajasini   
+# Maydondagi oqimning “chiqish” darajasini   
 Harorat taqsimotini
 +++++
 Grin teoremasi quyidagi holatda qo‘llanilmaydi: 
 Soha yopiq bo‘lsa 
 Funksiya sohada aniqlangan bo‘lsa  
 Funksiya doimiy bo‘lsa  
-#Funksiya sohada uzluksiz bo‘lmasa 
+# Funksiya sohada uzluksiz bo‘lmasa 
 +++++
 Parametrik sirt qanday ta’riflanadi? 
 Ikki o‘zgaruvchili algebraik tenglama bilan berilgan sirt 
-#Vektorial funksiya orqali ikki parametr yordamida ifodalangan sirt  
+# Vektorial funksiya orqali ikki parametr yordamida ifodalangan sirt  
 Fazoda to‘g‘ri chiziq bo‘yicha cho‘zilgan egri chiziq  
 Har doim tekis bo‘lgan sirt
-+++++
-Stoks teoremasi nimani bog‘laydi? 
-#Uyurma va sirkulyatsiyani 
-Divergensiya va oqimni  
-Gradiyent va ekstremumni  
-Radius va tezlikni
 +++++
 Aylanma sirt qanday hosil qilinadi? 
 Nuqtani harakatlantirish orqali 
 Egri chiziqni to‘g‘ri chiziq bo‘ylab siljitish orqali  
-#Egri chiziqni aylantirish orqali  
+# Egri chiziqni aylantirish orqali  
 Funksiyani integral orqali hosil qilish
 +++++
 Quyidagilardan qaysi biri urinma tekislikni aniqlash uchun kerak? 
 Gradient vektor 
-#Parametrik sirtning qism hosilalari  
+# Parametrik sirtning qism hosilalari  
 Egri chiziq tenglamasi  
 Divergensiya
 +++++
 Quyidagi ifodani aniqlang: r<sup>-&gt;</sup>(u,v)=(x(u,v),y(u,v),z(u,v))
 To‘g‘ri chiziqning parametri
 Egri chiziq tenglamasi
-#Parametrik sirtning umumiy ifodasi
+# Parametrik sirtning umumiy ifodasi
 Funksiya grafigi
 +++++
 Sirt uzunligini topish uchun nima zarur? 
 Sirtning maydonini hisoblash 
 Egri chiziq uzunligini hisoblash  
 Sirtning urinma tekisligini topish  
-#Sirt parametrik tenglamalari bo‘yicha sirt elementini hisoblash 
+#  Sirt parametrik tenglamalari bo‘yicha sirt elementini hisoblash 
 +++++
 Aylanma sirtga misol keltiring: 
 Sharik 
 Paraboloid  
-#Silindr yoki konus   
+# Silindr yoki konus   
 Ko‘pburchak
 +++++
 Parametrik sirtlarning tatbiqlari ko‘proq qayerda qo‘llaniladi? 
 Faqat nazariy matematikada 
 Raqamli tahlilda  
-#Fizikada, injiniringda va grafikada 
-Faqat integrallar nazariyasida
+# Fizikada, injiniringda va grafikada 
+ Faqat integrallar nazariyasida
 +++++
 Vektor maydonning sirt bo‘yicha integrali fizikada nimani anglatadi? 
 Vektorlarning zichligini 
 Maydon potensialini  
-#Oqimni   
+# Oqimni   
 Divergensiyani
 +++++
 Yo‘naltirilgan sirt deganda nima tushuniladi? 
 Sirtning egri bo‘lishi 
-#Har bir nuqtada normal vektor mavjud bo‘lgan sirt  
+# Har bir nuqtada normal vektor mavjud bo‘lgan sirt  
 Sirtlar chegarasi mavjudligi  
 Sirtning simmetrik bo‘lishi
 +++++
 Sirt integralining fizik tatbiqi quyidagilardan qaysi biri bilan bog‘liq? 
 Hajmni hisoblash 
 Kuchlar sistemasi  
-#Oqim (flux) orqali modellashtirish  
+# Oqim (flux) orqali modellashtirish  
 Faqat matematik tasnif
 +++++
 Agar vektor maydon doimiy bo‘lsa, sirt integrali natijasi nima bo‘ladi? 
 Nolga teng bo‘ladi 
-#Faqat sirt yuzasiga bog‘liq bo‘ladi   
+# Faqat sirt yuzasiga bog‘liq bo‘ladi   
 Egri chiziq uzunligiga bog‘liq bo‘ladi  
 Maydon divergentsiyasiga bog‘liq
 +++++
-∬<sub>D </sub>ρ(x,y) dxdy integral nimani bildiradi?
-Yuzani
-Jismning tezligini
-#Massani
-O‘rta qiymatni
-+++++
 Divergensiya teoremasi bilan sirt integrali o‘rtasida qanday bog‘liqlik bor? 
 Sirt integrali har doim nol 
-#Sirt integrali – hajm ichidagi divergentsiyaning hajmiy integraliga teng  
+# Sirt integrali – hajm ichidagi divergentsiyaning hajmiy integraliga teng  
 Sirt integralida divergentsiya ishlatilmaydi  
 Sirt integrali faqat yopiq sirt uchun mavjud emas
 +++++
 Skalyar maydon nima? 
 Har bir nuqtada faqat vektor qiymatga ega maydon 
-#Har bir nuqtada faqat skalyar qiymatga ega maydon  
+# Har bir nuqtada faqat skalyar qiymatga ega maydon  
 Vaqtga bog‘liq bo‘lgan maydon  
 Har xil o‘zgaruvchili maydon
 +++++
 Vektor maydonning o‘ramasi nolga teng bo‘lishi nimani bildiradi? 
 Maydon yopiq chiziqlar bo‘ylab sirkulyatsiya qiladi 
-#Maydon aylanishsiz, potensial maydon hisoblanadi  
+# Maydon aylanishsiz, potensial maydon hisoblanadi  
 Maydonda oqim mavjud  
 Maydon konservativ emas
 +++++
 Divergensiya fizik jihatdan nimani bildiradi? 
 Aylanish miqdorini 
 To‘g‘rilik darajasini  
-#Maydonning tarqalish intensivligini   
+# Maydonning tarqalish intensivligini   
 Maydonning yo‘nalishini
 +++++
 Divergensiya noldan farqli bo‘lsa, bu nimani anglatadi? 
 Maydon konservativ 
 Maydon yo‘nalishini o‘zgartirmaydi  
-#Maydon tarqalmoqda yoki to‘planmoqda  
+# Maydon tarqalmoqda yoki to‘planmoqda  
 Maydon barqaror
 +++++
 Gradiyent vektor har doim qanday yo‘nalgan bo‘ladi? 
 Funksiya qiymati kamayadigan yo‘nalishda 
 Minimum nuqtaga tomon  
 Maksimum nuqtadan uzoqlashadigan yo‘nalishda  
-#Eng katta o‘sish yo‘nalishida
+# Eng katta o‘sish yo‘nalishida
 +++++
 Sath sirti nima? 
 Fazodagi egri chiziq 
 Tekislikda chiziq  
-#Skalyar funksiya doimiysi orqali berilgan sirt  
+# Skalyar funksiya doimiysi orqali berilgan sirt  
 Harakat trayektoriyasi
 +++++
 Divergensiya nolga teng bo‘lsa, vektor maydon qanday deb ataladi? 
 Irrotatsion 
-#Solenoidal  
+# Solenoidal  
 Gradient maydon  
 Skalyar maydon
 +++++
 Potensial maydon deb qanday maydonga aytiladi? 
 Sirkulyatsiyasi har doim musbat bo‘lgan maydon 
 Divergensiyasi nolga teng bo‘lgan maydon   
-#Gradient ko‘rinishidagi vektor maydon   
+# Gradient ko‘rinishidagi vektor maydon   
 Har doim burama vektorga ega maydon 
 +++++
 Agar vektor maydonning uyurmasi nolga teng bo‘lsa, bu maydon qanday deb ataladi? 
 Solenoidal  
-#Potensial  
+# Potensial  
 Vaqtga bog‘liq  
 Sferik
 +++++
+Stoks teoremasi nimani bog‘laydi? 
+# Uyurma va sirkulyatsiyani 
+Divergensiya va oqimni  
+Gradiyent va ekstremumni  
+Radius va tezlikni
++++++
 Stoks teoremasi qanday geometrik ob'yektlar ustida ishlatiladi? 
 Qattiq jismlar ustida 
-#Egri chiziqlar va sirtlar ustida  
+# Egri chiziqlar va sirtlar ustida  
 Ko‘pburchaklar ustida 
-Doiralar va ellipslar ustida 
+ Doiralar va ellipslar ustida 
 +++++
-Quyidagi integral:  <img src="https://hemis.fstu.uz/static/uploads/5/EjvYRcFIqLlB2DVrmszAJFg2s17nrMJI.png" width="65" height="31"> nima anglatadi?
+Quyidagi integral:  <img src="https://hemis.fstu.uz/static/uploads/5/EjvYRcFIqLlB2DVrmszAJFg2s17nrMJI.png" width="65" height="31"> nima anglatadi?
 Gradient maydoni
-#II turdagi egri chiziqli integral
+# II turdagi egri chiziqli integral
 Divergensiya
 Skalyar maydon
 +++++
 Agar <img src="https://hemis.fstu.uz/static/uploads/5/G4dCa_MbHoSZskrnh9b6r0Isu9oa-oY8.png" width="57" height="27"> bo‘lsa, unda <img src="https://hemis.fstu.uz/static/uploads/5/IYX8U4ftnOvUwRE7kPfdVXkfvF_Jzn8f.png" width="83" height="30">
 0
 ∇f ning qiymati
-#f(B)−f(A), bu yerda A,B — boshlang‘ich va oxirgi nuqtalar
+# f(B)−f(A), bu yerda A,B — boshlang‘ich va oxirgi nuqtalar
 Maydonning maksimal qiymati
 +++++
 Quyidagi ifoda: <img src="https://hemis.fstu.uz/static/uploads/5/Sioz-Uw9pLEWIHlPp1cr-5OtKa2oArPI.png" width="75" height="28"> fizikadagi nimani anglatadi?
-#Ish
+# Ish
 Kuch
 Harorat
 Zichlik
 +++++
 Grin teoremasi qanday formulani ifodalaydi?
-#<img src="https://hemis.fstu.uz/static/uploads/5/l_hde7Nw5-U0RdUxj5icm1edk-m5Ofdd.png" width="192" height="39">
-<img src="https://hemis.fstu.uz/static/uploads/5/sgkD4x21Xo5EaDQlYB-EioOJkvp5zt6n.png" width="223" height="38">
-<img src="https://hemis.fstu.uz/static/uploads/5/qpsyGZZHbZ3LZTmN8YVPjpdoKVqSkogA.png" width="209" height="33">
-<img src="https://hemis.fstu.uz/static/uploads/5/3wOK6rmyAhiSM4PZjS8_RkPbJvQA4-J-.png" width="192" height="33">
+<img src="https://hemis.fstu.uz/static/uploads/5/l_hde7Nw5-U0RdUxj5icm1edk-m5Ofdd.png" width="192" height="39">
+#  <img src="https://hemis.fstu.uz/static/uploads/5/sgkD4x21Xo5EaDQlYB-EioOJkvp5zt6n.png" width="223" height="38">
+ <img src="https://hemis.fstu.uz/static/uploads/5/qpsyGZZHbZ3LZTmN8YVPjpdoKVqSkogA.png" width="209" height="33">
+ <img src="https://hemis.fstu.uz/static/uploads/5/3wOK6rmyAhiSM4PZjS8_RkPbJvQA4-J-.png" width="192" height="33">
 +++++
 uyurma operatori qanday ifodalanadi?
 <img src="https://hemis.fstu.uz/static/uploads/5/rcv5cMBRfRYIkE6gpnZyiFHy7jS2IP8C.png" width="48" height="23">
-#<img src="https://hemis.fstu.uz/static/uploads/5/faEkDnq8sL8GGQmHxVLdRv9nyo6VPZq2.png" width="54" height="24">
+# <img src="https://hemis.fstu.uz/static/uploads/5/faEkDnq8sL8GGQmHxVLdRv9nyo6VPZq2.png" width="54" height="24">
 <img src="https://hemis.fstu.uz/static/uploads/5/RhpeyTE8ScbC32du72XBLGM0fs7qt0Gc.png" width="39" height="25">
 <img src="https://hemis.fstu.uz/static/uploads/5/4QDj31HFZe2M6p-6KdP1mwvdjGafqGy7.png" width="30" height="22">
-+++++
-Quyidagi ifoda nimani hisoblash uchun ishlatiladi?
-<img src="https://hemis.fstu.uz/static/uploads/5/Y_pUbIvip4WtIX6XS-YzDqrArltiDNzB.png">
-Yuzaning uzunligi
-#Massaning og‘irlik markazi (x-koordinatasi)
-Sirtning inersiya momenti
-Egri chiziq uzunligi
 +++++
 Parametrik sirtning urinma tekisligi quyidagiga tayanadi:
 <img src="https://hemis.fstu.uz/static/uploads/5/zNHaHo5CVPnnfjSGVHauEnanIPO7FP0F.png" width="109" height="23">
 <img src="https://hemis.fstu.uz/static/uploads/5/ucjJDtzdEPvNDBU-HhgcyRzejDP7L6pJ.png" width="73" height="24">
-#<img src="https://hemis.fstu.uz/static/uploads/5/dAZZENVHWq0QkXzfdavZ_snarQi1e2m6.png" width="56" height="25"> orqali aniqlanadigan normal vektor
+#  <img src="https://hemis.fstu.uz/static/uploads/5/dAZZENVHWq0QkXzfdavZ_snarQi1e2m6.png" width="56" height="25"> orqali aniqlanadigan normal vektor
 Sirt tenglamasining ikkinchi tartibli hosilalari
 +++++
 Quyidagi integral nimani ifodalaydi?
-  <img src="https://hemis.fstu.uz/static/uploads/5/xf1ipEb4k4i6scSA0tmBWlZK_WZyUp1R.png" width="74" height="23">
+  <img src="https://hemis.fstu.uz/static/uploads/5/xf1ipEb4k4i6scSA0tmBWlZK_WZyUp1R.png" width="74" height="23">
 Sirt yuzasi
-#Jism hajmi
+# Jism hajmi
 Massaning og‘irligi
 O‘rta qiymat
 +++++
 Sirtning yuzasi qanday formula bilan hisoblanadi?
 <img src="https://hemis.fstu.uz/static/uploads/5/E24dcHgyZxDJ4-IaH5aAt9UIQ2ivq2il.png" width="118" height="26">
 <img src="https://hemis.fstu.uz/static/uploads/5/EnfXo0xa7orgVepM8SpR-0_P4Myrv_hz.png" width="169" height="30">
-#<img src="https://hemis.fstu.uz/static/uploads/5/YC_DLVVEpYwOG2f0LkolAt5lHAwCKM_I.png" width="153" height="32">
+# <img src="https://hemis.fstu.uz/static/uploads/5/YC_DLVVEpYwOG2f0LkolAt5lHAwCKM_I.png" width="153" height="32">
 <img src="https://hemis.fstu.uz/static/uploads/5/4kYEUUmGr2yNOYI4sB9FlSGFHOWupBWc.png" width="65" height="26">
 +++++
 Agar sirt <img src="https://hemis.fstu.uz/static/uploads/5/8livKwsGQ2Oas8FbZ4jeuKVdLry4MOgC.png" width="54" height="30"> parametrik tarzda berilgan bo‘lsa, dS qanday ifodalanadi?
 dudv
-#<img src="https://hemis.fstu.uz/static/uploads/5/wSVEggqASCXkrPY9SNP6_AAIyeYmnhYf.png" width="119" height="25">
+# <img src="https://hemis.fstu.uz/static/uploads/5/wSVEggqASCXkrPY9SNP6_AAIyeYmnhYf.png" width="119" height="25">
 <img src="https://hemis.fstu.uz/static/uploads/5/WMXql8ALq6fRxEThk4UO2zbUp2CmTKS8.png" width="86" height="24">
 <img src="https://hemis.fstu.uz/static/uploads/5/hInywcHlLihOBYXhWQ6r8-hMSGmtChk7.png" width="112" height="24">
 +++++
 Vektor maydon F ⃗ berilgan: agar F⃗=∇ϕ u holda ∇×F⃗ nima bo‘ladi?
 <img src="https://hemis.fstu.uz/static/uploads/5/YX5xKx86M05U2G63YxAGa7oQQ4MEVcbZ.png" width="20" height="25">
-#0
+# 0
 <img src="https://hemis.fstu.uz/static/uploads/5/MIShgCux_Q34MBLFMhWe_XCwuwZibyGr.png" width="42" height="23">
 ϕ
 +++++
@@ -1325,59 +1413,66 @@ Sferik koordinatalar
 #Tekis shakl yuzasi  
 Harorat gradienti
 +++++
+∬<sub>D </sub>ρ(x,y) dxdy integral nimani bildiradi?
+Yuzani
+Jismning tezligini
+# Massani
+O‘rta qiymatni
++++++
+Quyidagi ifoda nimani hisoblash uchun ishlatiladi?
+<img src="https://hemis.fstu.uz/static/uploads/5/Y_pUbIvip4WtIX6XS-YzDqrArltiDNzB.png">
+Yuzaning uzunligi
+# Massaning og‘irlik markazi (x-koordinatasi)
+Sirtning inersiya momenti
+Egri chiziq uzunligi
++++++
 Uch karrali integralni hisoblashda qaysi tartibda integrallash mumkin?
 Faqat dz dy dx 
 Faqat dx dy dz
-#Har qanday tartibda 
+# Har qanday tartibda 
 Faqat dy dx dz
 +++++
 Jismning hajmini topish uchun qanday formuladan foydalaniladi?
 <img src="https://hemis.fstu.uz/static/uploads/5/hEgtHUuFzUuxbcU8JnxMSOZXRmSWfCAq.png" width="66" height="26">
-#<img src="https://hemis.fstu.uz/static/uploads/5/RbarO73CimG816MLCP3Wn-CHm0a2zyGx.png" width="76" height="25">
+# <img src="https://hemis.fstu.uz/static/uploads/5/RbarO73CimG816MLCP3Wn-CHm0a2zyGx.png" width="76" height="25">
 <img src="https://hemis.fstu.uz/static/uploads/5/I4Mi6k9mTrKxbnhh9Cburli8jGcOl0WH.png" width="81" height="26">
 <img src="https://hemis.fstu.uz/static/uploads/5/Iyz-bbM007dVSap6hBzVuPqnWP5Mo6DE.png" width="100" height="24">
 +++++
 Og‘irlik markazining y-koordinatasi qanday topiladi?
 <img src="https://hemis.fstu.uz/static/uploads/5/g2_ohn29Ee2P4usp9t6lcEn9z_ge3nQd.png" width="72" height="25">
-#<img src="https://hemis.fstu.uz/static/uploads/5/uhPbRNXJYJH2E4LS2GnSU9CX31fozyuY.png" width="152" height="34">
+# <img src="https://hemis.fstu.uz/static/uploads/5/uhPbRNXJYJH2E4LS2GnSU9CX31fozyuY.png" width="152" height="34">
 <img src="https://hemis.fstu.uz/static/uploads/5/PBXAZZPUikzVTR2G4Ef38DHfvvj5XWbw.png" width="51" height="27">
 <img src="https://hemis.fstu.uz/static/uploads/5/8Yc_HnbBOT2TD6LHYU8eW4tHTD8uhuBF.png" width="120" height="35">
 +++++
 Massaning og‘irlik markazini topish uchun nima kerak?
 Faqat tekislikdagi soha chegaralari 
-#Jism zichligi funksiyasi va ikki karrali integral
-Oddiy integral
+# Jism zichligi funksiyasi va ikki karrali integral
+ Oddiy integral
 Gradiyent vektori
 +++++
-Quyidagi integral qanday sohani ifodalaydi? 
+Quyidagi integral qanday sohani ifodalaydi? 
 <img src="https://hemis.fstu.uz/static/uploads/5/lKKyYdOdoVLospcBZ0vxJiUqQegkNtTd.png" width="198" height="49">
 Ikki o‘lchamli to‘g‘ri to‘rtburchak
 Fazodagi parda
-#Uch o‘lchamli uchburchaklar prizmasi
+# Uch o‘lchamli uchburchaklar prizmasi
 Sfera
 +++++
 Quyidagi ifoda fizik tatbiqqa qaysi holatga tegishli? <img src="https://hemis.fstu.uz/static/uploads/5/aMxD_g1Jn9CW-AniFT7HO2V3A9P5OJeT.png" width="162" height="24">
 Yuzaning hajmi
 Massaning og‘irligi
-#X o‘qiga nisbatan inersiya momenti
+# X o‘qiga nisbatan inersiya momenti
 Yo‘nalishli tezlanish
 +++++
 Uch karrali integralning geometrik ma’nosi nimani anglatadi? 
 Sirt uzunligini  
 Egri chiziq uzunligini 
-#Fazoviy jism hajmini 
+# Fazoviy jism hajmini 
 Og‘irlik markazini
-+++++
-z=xy(x+y-2) funksiyaning maksimum qiymatini toping.
-8/27
-8/3
-#mavjud emas
-1
 +++++
 Uch karrali integral yordamida qanday fizik qiymatlarni topish mumkin?
 Elektr kuchi
 Jismning og‘irligi
-#Jismning hajmi, massasi, inersiya momenti
+# Jismning hajmi, massasi, inersiya momenti
 Radius
 +++++
 (2-i)/(1-2i) kompleks sonni haqiqiy qismini toping?
@@ -1388,63 +1483,57 @@ Radius
 +++++
 Uch karrali integralda soha D qaysi turdagi sohani bildiradi?
 Tekislikdagi egri chiziqli soha
-#Fazodagi uch o‘lchamli soha =
-Radiusga bog‘liq aylana=
+# Fazodagi uch o‘lchamli soha 
+Radiusga bog‘liq aylana
 Ixtiyoriy intervallar to‘plami
 +++++
 Uch karrali integralni Dekart koordinatalarida hisoblashda nima asosiy rol o‘ynaydi?
 Egri chiziq tenglamasi
 Sferik formulalar
-#Har bir o‘zgaruvchi uchun chegaralarni aniq aniqlash 
+# Har bir o‘zgaruvchi uchun chegaralarni aniq aniqlash 
 Tangens formulasidan foydalanish
 +++++
 Quyidagi integral qanday sohani ifodalaydi? <img src="https://hemis.fstu.uz/static/uploads/5/DUe4NLnG2ovQ2YU5MBdMW_KxCIaCQJEM.png" width="191" height="33">
 Ikki o‘lchamli to‘g‘ri to‘rtburchak
 Fazodagi parda
-#Uch o‘lchamli uchburchaklar prizmasi
+# Uch o‘lchamli uchburchaklar prizmasi
 Sfera
 +++++
 Quyidagi ko‘rinishdagi integralda qanday o‘zgaruvchilar tartibida hisoblash amalga oshiriladi?
- <img src="https://hemis.fstu.uz/static/uploads/5/wQWoUhhHIUnsQK1nK-GTItLokAf4gHOe.png" width="166" height="31">
+ <img src="https://hemis.fstu.uz/static/uploads/5/wQWoUhhHIUnsQK1nK-GTItLokAf4gHOe.png" width="166" height="31">
 Avval x, so‘ng y, oxirida z
-#Avval z, so‘ng y, oxirida x
+# Avval z, so‘ng y, oxirida x
 Har doim avval x
 Hech qachon z birinchi bo‘lib olinmaydi
 +++++
 Uch karrali integralda o‘zgaruvchilarni almashtirishda qanday omil hisobga olinadi?
 Egri chiziq uzunligi
-#Jakobian determinanti 
+# Jakobian determinanti 
 Radius
 Limit va uzluksizlik
 +++++
 Silindrik koordinatalar sistemasida o‘zgaruvchilar qanday ifodalanadi?
-#x=rcosθ, y=rsinθ, z=z 
-x=ρcosφ, y=ρsinφ, z=z 
+# x=rcosθ, y=rsinθ, z=z 
+ x=ρcosφ, y=ρsinφ, z=z 
 x=r, y=θ, z=ϕ 
 x=ρ, y=ϕ, z=θ 
 +++++
 Silindrik koordinatalarda Yakobian quyidagicha ifodalanadi:
 1
-#r 
+# r 
 ρsinϕ
 θ 
 +++++
 Sferik koordinatalar sistemasida x,y,z qanday ifodalanadi? 
 x=rcosθ,y=rsinθ,z=z  
-#x=ρsinϕcosθ,y=ρsinϕsinθ,z=ρcosϕ   
+# x=ρsinϕcosθ,y=ρsinϕsinθ,z=ρcosϕ   
 x=ρcosθ,y=ρsinθ,z=z   
 x=rcosϕ,y=rsinϕ,z=θ
 +++++
-z=x<sup>2</sup>+xy+y<sup>2</sup>-3x-6y funksiyaning ekstremumga tekshiring.
--9
--3
-2
-0
-+++++
-Quyidagi ifodada J nimani bildiradi?  <img src="https://hemis.fstu.uz/static/uploads/5/iuWvUyCp1JJ3BFl3imNwOuIaljoOTW0-.png" width="256" height="58">
+Quyidagi ifodada J nimani bildiradi?  <img src="https://hemis.fstu.uz/static/uploads/5/iuWvUyCp1JJ3BFl3imNwOuIaljoOTW0-.png" width="256" height="58">
 Funksiya limitini
 Koordinatalarni
-#Jakobian determinanti
+# Jakobian determinanti
 Hajm birliklarini
 +++++
 (2-i)/(1-2i) kompleks sonni mavhum qismini toping?
@@ -1483,7 +1572,7 @@ cos(π/3)+isin(π/3)
 -6+i
 6+2i
 +++++
--7i<sup>220</sup>+i<sup>97</sup>kompleks sonni hisoblang=
+-7i<sup>220</sup>+i<sup>97</sup>kompleks sonni hisoblang
 4-i
 7-i
 #-7+i
@@ -1513,7 +1602,7 @@ z=x<sup>3</sup>-5x<sup>2</sup>-xy+y<sup>2</sup>+10x+5y-4 funksiyaning 2-tartibli
 -2
 0
 +++++
-z=x<sup>3</sup>-5x<sup>2</sup>-xy+y<sup>2</sup>+10x+5y-4 funksiyaning x o'zgaruvchi boyicha 2-tartibli hosilasini (2;-1) nuqtadagi qiymatini toping.
+z=x<sup>3</sup>-5x<sup>2</sup>-xy+y<sup>2</sup>+10x+5y-4 funksiyaning x o`zgaruvchi boyicha 2-tartibli hosilasini (2;-1) nuqtadagi qiymatini toping.
 1
 -1
 #2
@@ -1525,7 +1614,31 @@ z=xy(x+y-2) funksiyaning minumum qiymatini toping.
 mavjud emas
 -1
 +++++
-z=x<sup>2</sup>+3y<sup>2</sup>+x-y funksiyaning x≤1, y≤1, x+y≥1 ko'rsatilgan sohadagi  ekstremumlarini  toping.
+z=xy(x+y-2) funksiyaning maksimum qiymatini toping.
+8/27
+8/3
+#mavjud emas
+1
++++++
+z=x<sup>2</sup>+xy+y<sup>2</sup>-3x-6y funksiyaning ekstremumga tekshiring.
+#-9
+-3
+2
+0
++++++
+z=xy<sup>2</sup>(1-x-y) funksiyaning ekstremumga tekshiring.
+#1/64
+2/3
+1
+0
++++++
+z=x<sup>3</sup>+y<sup>3</sup>-15xy funksiyaning ekstremumga tekshiring.
+#-125
+-10
+15
+0
++++++
+z=x<sup>2</sup>+3y<sup>2</sup>+x-y funksiyaning x≤1, y≤1, x+y≥1 ko`rsatilgan sohadagi  ekstremumlarini  toping.
 #zmax=4 ; zmin=1
 zmax=3 ; zmin=-1
 zmax=2 ; zmin=0
@@ -1550,16 +1663,16 @@ zmin=2
 <img src="https://hemis.fstu.uz/static/uploads/7/gTn2wBubVxlWAOX-AykunXYh7x4zehet.png">
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/fFTTxT0Iw2BDyj_HzOwYCjtyDRGg5gTo.png">
-#⟨2t,cos⁡t⟩
-⟨t,cost⟩
-⟨2t,−cost⟩
-⟨t<sup>2</sup>,cost⟩
+#2t,cos⁡t
+t,cost
+2t,−cost 
+t<sup>2</sup>,cost
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/-eN80EXRnsEBc-8u5Ebv2x9ANZGKMPG2.png">
-#⟨e<sup>t</sup>,1/t⟩
-⟨t,e<sup>t</sup>⟩
-⟨ln⁡t,e<sup>t</sup>⟩
-⟨e<sup>t</sup>,t⟩
+#e<sup>t</sup>,1/t
+t,e<sup>t</sup>
+ln⁡t,e<sup>t</sup>
+e<sup>t</sup>,t
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/XuLTkx-bHjzR5heaI3hw7dZmlbv3Z8oU.png" width="697" height="49">
 #<img src="https://hemis.fstu.uz/static/uploads/7/RCGxdnI5y23jz6pmuyrc9VDCVFsFHsrQ.png">
@@ -1586,27 +1699,26 @@ zmin=2
 <img src="https://hemis.fstu.uz/static/uploads/7/pL8gFkowsbcG2zvhEaQiS6cM52Gr8S_Y.png">
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/JdI2xH9Pm5vVf0wIAOlw7p7PZbqWpCJU.png">
-#⟨1,2t,3t<sup>2</sup>⟩
-⟨2t,3t<sup>2</sup>,
-4t<sup>3</sup>⟩
-⟨t,2t,3t⟩
-⟨1,t,t<sup>2</sup>⟩
+#1,2t,3t<sup>2</sup>
+2t,3t<sup>2</sup>,4t<sup>3</sup>
+t,2t,3t
+1,t,t<sup>2</sup>
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/FWFL69kyeHuMswhMwRF3nmyeyHpBF6yX.png" width="678" height="55">
-<img src="https://hemis.fstu.uz/static/uploads/7/WTxGZqjPoIXNMc7hqndul32N3QX-NFSk.png">
+#<img src="https://hemis.fstu.uz/static/uploads/7/WTxGZqjPoIXNMc7hqndul32N3QX-NFSk.png">
 <img src="https://hemis.fstu.uz/static/uploads/7/KtEScRUVJaZPwX1aOPMLnJMDzDRAmpgm.png">
 <img src="https://hemis.fstu.uz/static/uploads/7/AjB4rkQYlzaB7QJgXgNpk4OuKFRFHxpa.png">
-#<img src="https://hemis.fstu.uz/static/uploads/7/iVBrcGaPiZdcbk_sVoinFmSDgEy-9dJx.png">
+<img src="https://hemis.fstu.uz/static/uploads/7/iVBrcGaPiZdcbk_sVoinFmSDgEy-9dJx.png">
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/ZJtpnABfLiIWQJvsgX8foNhAINuvjccJ.png" width="661" height="55">
-<img src="https://hemis.fstu.uz/static/uploads/7/2Y5TwkzbEyYaTelfpYEJHbfT5IUGFFzE.png">
+#<img src="https://hemis.fstu.uz/static/uploads/7/2Y5TwkzbEyYaTelfpYEJHbfT5IUGFFzE.png">
 <img src="https://hemis.fstu.uz/static/uploads/7/-ASRSv3h5IVmqdowEo3vHDxL1k_mpChQ.png">
 <img src="https://hemis.fstu.uz/static/uploads/7/2gJttBEyI-FyrWNGf7wamHBVpWNYsFB5.png">
-#<img src="https://hemis.fstu.uz/static/uploads/7/AUR5S8eYHGBoLODMzagSQnpoCh_vqSPN.png">
+<img src="https://hemis.fstu.uz/static/uploads/7/AUR5S8eYHGBoLODMzagSQnpoCh_vqSPN.png">
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/AYx_ffxXarKuQ4FFH3rISu04CuaafDt_.png" width="699" height="40">
-<img src="https://hemis.fstu.uz/static/uploads/7/IF5ULqQxJDElnVOjyrtugbEh5UpNCzdN.png">
-#<img src="https://hemis.fstu.uz/static/uploads/7/a8ryAEwahgsbmASoec1SpkEaSxxNoYsc.png">
+#<img src="https://hemis.fstu.uz/static/uploads/7/IF5ULqQxJDElnVOjyrtugbEh5UpNCzdN.png">
+<img src="https://hemis.fstu.uz/static/uploads/7/a8ryAEwahgsbmASoec1SpkEaSxxNoYsc.png">
 <img src="https://hemis.fstu.uz/static/uploads/7/TpDRZdy8fxGZGNUIBudUkGhMvJ_T8Z_y.png">
 <img src="https://hemis.fstu.uz/static/uploads/7/Q2OiXPRQYjcR9GZ1lwG7_6QAAwk6w5U_.png">
 +++++
@@ -1635,10 +1747,10 @@ e
 0
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/9_61M9Od-sH-PwxiMwkn-u-eAp02-Uwg.png" width="614" height="35">
-<img src="https://hemis.fstu.uz/static/uploads/7/jM6Ihh36dxfLpwqN2j5vr_R2MD3tR9jM.png" width="301" height="39">
+#<img src="https://hemis.fstu.uz/static/uploads/7/jM6Ihh36dxfLpwqN2j5vr_R2MD3tR9jM.png" width="301" height="39">
 <img src="https://hemis.fstu.uz/static/uploads/7/DclMnxO5N5AyVg-KFRnTIzMPMXCqUrIg.png" width="227" height="39">
 <img src="https://hemis.fstu.uz/static/uploads/7/s6KJUO7Yl6vmibMaPAyxEtmMfZumxANv.png" width="231" height="28">
-#<img src="https://hemis.fstu.uz/static/uploads/7/yK0zCaTPtBTSn4aUz90LUiqM3YPuaqfB.png" width="226" height="27">
+<img src="https://hemis.fstu.uz/static/uploads/7/yK0zCaTPtBTSn4aUz90LUiqM3YPuaqfB.png" width="226" height="27">
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/RQ2X_ngNeQ6susV9HI2k0rWsYe27J1Bh.png" width="539" height="31">
 #<img src="https://hemis.fstu.uz/static/uploads/7/mYEIx-YWCftW95wr-CFbjABDEXu7GAbq.png" width="194" height="55">
@@ -1647,9 +1759,9 @@ e
 <img src="https://hemis.fstu.uz/static/uploads/7/68gnbWs1vcmAHYGZZIqhw0N-lI6MG8bP.png" width="171" height="53">
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/7JyQm0zUKkcSpl9nEpYUFDa7buM8V96q.png" width="600" height="72">
-<img src="https://hemis.fstu.uz/static/uploads/7/zD6fqYebWFAJZPSJRua16ILmIEJjBor5.png" width="223" height="73">
+#<img src="https://hemis.fstu.uz/static/uploads/7/zD6fqYebWFAJZPSJRua16ILmIEJjBor5.png" width="223" height="73">
 <img src="https://hemis.fstu.uz/static/uploads/7/6JRZ7RXqY5v_Mj5Is82aqKOUQrcNhafN.png" width="215" height="85">
-#<img src="https://hemis.fstu.uz/static/uploads/7/RzHVtF_kPo0UrjpaeN6lJGCHqmRzDL4i.png" width="219" height="82">
+<img src="https://hemis.fstu.uz/static/uploads/7/RzHVtF_kPo0UrjpaeN6lJGCHqmRzDL4i.png" width="219" height="82">
 <img src="https://hemis.fstu.uz/static/uploads/7/s0WBaSj2J9OSp28UluNl78zjlzBlUjc7.png" width="219" height="90">
 +++++
 <img src="https://hemis.fstu.uz/static/uploads/7/GbHLQKPM7JqWxLVS341kPj1Btx2Iz-3o.png" width="622" height="74">
@@ -1665,8 +1777,8 @@ cos(5π/3)+isin(5π/3)
 4
 +++++
 Hisoblang: <img src="https://hemis.fstu.uz/static/uploads/7/ldcbXCZPP6sNvPeSaTKgHovKIEQU5gBL.png" width="200" height="47">
-<img src="https://hemis.fstu.uz/static/uploads/7/7wuDuca9-obzxIhVwRolNCiaiPagXjZL.png" width="89" height="54">
-#<img src="https://hemis.fstu.uz/static/uploads/7/1Q9-rCx1DJ-OyRplGrRArDWoJptRbbfe.png" width="86" height="52">
+#<img src="https://hemis.fstu.uz/static/uploads/7/7wuDuca9-obzxIhVwRolNCiaiPagXjZL.png" width="89" height="54">
+<img src="https://hemis.fstu.uz/static/uploads/7/1Q9-rCx1DJ-OyRplGrRArDWoJptRbbfe.png" width="86" height="52">
 <img src="https://hemis.fstu.uz/static/uploads/7/8RTQGNS37K1FcgAuU0guCfMNGn-SydYL.png" width="76" height="54">
 <img src="https://hemis.fstu.uz/static/uploads/7/KrWed6tXc5tQOkaD2zVgjalo0zkjsm09.png" width="83" height="44">
 +++++
@@ -1676,11 +1788,11 @@ f(x,y)=xlny funksiyani ikki karrali integralini toping. 0≤x≤4, 1≤y≤e
 0
 6
 +++++
-35i<sup>2</sup> -3i<sup>20</sup>+5i<sup>17</sup>+5i<sup>19</sup>+1 kompleks sonni hisoblang
+35i<sup>2</sup> -3i<sup>20</sup>+5i<sup>17</sup>+5i<sup>19</sup>+1kompleks sonni hisoblang
 33
--37
+#-37
 35+i
-#-37-2i
+-37-2i
 `;
 
         let allQuestions = [];
